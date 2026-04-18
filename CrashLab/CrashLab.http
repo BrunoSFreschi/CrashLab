@@ -1,0 +1,6 @@
+@CrashLab_HostAddress = http://localhost:5264
+
+GET {{CrashLab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
