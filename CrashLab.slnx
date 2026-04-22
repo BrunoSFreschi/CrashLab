@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="CrashLab.Api/CrashLab.Api.csproj" Id="661fc311-bd19-4521-9d23-911821183274" />
+  <Project Path="CrashLab.Application/CrashLab.Application.csproj" Id="fc9f2210-cf9a-4aea-b19d-c85580fcecde" />
+  <Project Path="CrashLab.Domain/CrashLab.Domain.csproj" Id="9096b536-abe8-4ce4-9404-1c4c15ba9386" />
+  <Project Path="CrashLab.Tests/CrashLab.Tests.csproj" Id="a15a5581-8eb6-4176-bf9d-36eed9b20687" />
 </Solution>
