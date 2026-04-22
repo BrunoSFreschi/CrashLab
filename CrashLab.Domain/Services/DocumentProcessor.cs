@@ -32,7 +32,7 @@ public class DocumentProcessor
         if (document.Customer == null)
             throw new Exception("Customer is required");
 
-        // ❌ BUG: validação incompleta proposital
+        // BUG: validação incompleta proposital
         if (document.Type == "invoice" && string.IsNullOrEmpty(document.Customer.Name))
             throw new Exception("Customer name is required");
     }
@@ -41,7 +41,7 @@ public class DocumentProcessor
     {
         if (document.Type == "invoice")
         {
-            // 💥 BUG REAL (NullReference intermitente)
+            // BUG (NullReference intermitente)
             var city = document.Customer.Address.City;
 
             _logger.LogInformation("Processing invoice for {City}", city);
