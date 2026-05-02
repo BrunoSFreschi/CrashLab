@@ -59,7 +59,7 @@ Para garantir foco e efetividade pedagógica, o desafio **intencionalmente exclu
 O desafio utiliza uma stack moderna, porém simplificada:
 
 ```
-- .NET 8
+- .NET 10
 - ASP.NET Core (Minimal API)
 - xUnit (testes automatizados)
 - Swagger (exploração da API)
