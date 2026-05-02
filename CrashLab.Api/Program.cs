@@ -26,4 +26,18 @@ app.MapPost("/documents/process", (Document doc, DocumentProcessor processor) =>
     }
 });
 
+app.MapPost("/documents/process-silent", (Document doc, DocumentProcessor processor) =>
+{
+    try
+    {
+        processor.Process(doc);
+    }
+    catch
+    {
+        // Intentionally swallowed for lab exercise.
+    }
+
+    return Results.Ok(new { message = "Processed successfully" });
+});
+
 app.Run();
